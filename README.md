@@ -103,6 +103,7 @@ If want Replace Lockpick Minigame with cricle minigame
 i am using sexy ps-ui here is snippets
 
 Replace Into qb-doorlock/client/main.lua
+Line no 486
 ```lua
 RegisterNetEvent('lockpicks:UseLockpick', function(isAdvanced)
 	if not closestDoor.data or not next(closestDoor.data) or PlayerData.metadata['isdead'] or PlayerData.metadata['ishandcuffed'] or (not closestDoor.data.pickable and not closestDoor.data.lockpick) or not closestDoor.data.locked then return end
