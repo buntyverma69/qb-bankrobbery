@@ -61,4 +61,36 @@ Changed into qb-doorlock/config.lua
 		pickable = false,
 		distance = 1.5
 	},
- 
+ 	-- Paleto Door 2 opened with thermite
+	{
+		objName = 'v_ilev_cbankvaulgate02',
+		objCoords  = vec3(-106.26, 6476.01, 31.98),
+		textCoords = vec3(-105.5, 6475.08, 31.99),
+		objYaw = -45.0,
+		authorizedJobs = { 'police' },
+		locked = true,
+		pickable = false,
+		distance = 1.5
+	},
+	-- First Pacific Door opened with lockpick
+	{
+		objName = 643152522,
+		objCoords  = vec3(225.646286, 228.886780, 97.323975),
+		textCoords = vec3(225.646286, 228.886780, 97.323975),
+		authorizedJobs = { 'police' },
+		objYaw = 160.00025939941,
+		locked = true,
+		pickable = true,
+		distance = 1.5
+	},
+	-- Second Pacific Door opened with lockpick
+	{
+		objName = 643152522,
+		objCoords  = vec3(229.890533, 227.342010, 97.323975),
+		textCoords = vec3(229.890533, 227.342010, 97.323975),
+		authorizedJobs = { 'police' },
+		objYaw = 340.00024414062,
+		locked = true,
+		pickable = true,
+		distance = 1.5
+	},
