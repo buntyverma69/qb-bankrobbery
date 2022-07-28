@@ -6,6 +6,8 @@ Step 1
 
 Changed into qb-doorlock/config.lua
 
+Replace with these line no 53 to 128
+
 
 	{                                                          -- door pacific first door card b
 		objName = 409280169,
@@ -94,3 +96,32 @@ Changed into qb-doorlock/config.lua
 		pickable = true,
 		distance = 1.5
 	},
+
+
+Step 2 (optional)
+If want Replace Lockpick Minigame with cricle minigame
+i am using sexy ps-ui here is snippets
+
+Replace Into qb-doorlock/client/main.lua
+
+RegisterNetEvent('lockpicks:UseLockpick', function(isAdvanced)
+	if not closestDoor.data or not next(closestDoor.data) or PlayerData.metadata['isdead'] or PlayerData.metadata['ishandcuffed'] or (not closestDoor.data.pickable and not closestDoor.data.lockpick) or not closestDoor.data.locked then return end
+	usingAdvanced = isAdvanced
+	TriggerEvent('qb-lockpick:client:openLockpick', lockpickFinish)
+end)
+
+              With
+
+
+RegisterNetEvent('lockpicks:UseLockpick', function(isAdvanced)
+	if not closestDoor.data or not next(closestDoor.data) or PlayerData.metadata['isdead'] or PlayerData.metadata['ishandcuffed'] or (not closestDoor.data.pickable and not closestDoor.data.lockpick) or not closestDoor.data.locked then return end
+	exports['ps-ui']:Circle(function(success)
+		if success then
+			lockpickFinish(success)
+			--print("success")
+		else
+			QBCore.Functions.Notify("Are you dumb? Go learn how to crack the door !", "success")
+			--print("fail")
+		end
+	end, 4, 14) -- NumberOfCircles, MS
+end)
