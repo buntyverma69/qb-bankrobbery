@@ -131,7 +131,9 @@ https://github.com/ofcshiro/FlagUpdateFix   [ For Gabz Maps Not props showing in
 https://github.com/buntyverma69/hacking   [ For Hacking Minigame ]
 
 
-**Credits:
+
+Credits:
+
 https://github.com/Project-Sloth/ps-ui
 
 https://github.com/qbcore-framework/qb-bankrobbery
