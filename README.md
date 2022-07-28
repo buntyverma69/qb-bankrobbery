@@ -30,7 +30,7 @@ Replace with these line no 53 to 128
 		pickable = false,
 		distance = 1.5,
 	},
-	--door2 for pacific opened with thermite right near the vault door         [door id 3]
+	--door3 for pacific opened with thermite right near the vault door         [door id 3]
 	{
 		objName = 409280169,
 		objCoords  = vec3(250.564209, 233.399384, 97.317978),       
@@ -41,7 +41,7 @@ Replace with these line no 53 to 128
 		pickable = false,
 		distance = 1.5
 	},
-	-- door3 for pacific opened with thermite after passing the door near vault
+	-- door4 for pacific opened with thermite after passing the door near vault    [door id 4]
 	{
 		objName = 409280169,
 		objCoords  = vec3(244.558014, 216.897278, 97.317978),
