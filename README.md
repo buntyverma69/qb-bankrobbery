@@ -6,7 +6,7 @@ Step 1
 
 Changed into qb-doorlock/config.lua
 
-```lua 
+
 	{                                                          -- door pacific first door card b
 		objName = 409280169,
 		objCoords  = vec3(272.642151, 219.898712, 97.317978),
@@ -61,4 +61,4 @@ Changed into qb-doorlock/config.lua
 		pickable = false,
 		distance = 1.5
 	},
-    ```
+ 
