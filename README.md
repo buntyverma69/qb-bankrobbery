@@ -104,16 +104,10 @@ i am using sexy ps-ui here is snippets
 
 Replace Into qb-doorlock/client/main.lua
 Line no 486
-```
+
 RegisterNetEvent('lockpicks:UseLockpick', function(isAdvanced)
-	if not closestDoor.data or not next(closestDoor.data) or PlayerData.metadata['isdead'] or PlayerData.metadata['ishandcuffed'] or (not closestDoor.data.pickable and not closestDoor.data.lockpick) or not closestDoor.data.locked then return end
-	usingAdvanced = isAdvanced
-	TriggerEvent('qb-lockpick:client:openLockpick', lockpickFinish)
-end)
 
-
-              
- With these
+```lua
 
 RegisterNetEvent('lockpicks:UseLockpick', function(isAdvanced)
 	if not closestDoor.data or not next(closestDoor.data) or PlayerData.metadata['isdead'] or PlayerData.metadata['ishandcuffed'] or (not closestDoor.data.pickable and not closestDoor.data.lockpick) or not closestDoor.data.locked then return end
