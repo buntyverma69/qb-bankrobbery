@@ -104,7 +104,7 @@ i am using sexy ps-ui here is snippets
 
 Replace Into qb-doorlock/client/main.lua
 Line no 486
-```lua
+```
 RegisterNetEvent('lockpicks:UseLockpick', function(isAdvanced)
 	if not closestDoor.data or not next(closestDoor.data) or PlayerData.metadata['isdead'] or PlayerData.metadata['ishandcuffed'] or (not closestDoor.data.pickable and not closestDoor.data.lockpick) or not closestDoor.data.locked then return end
 	usingAdvanced = isAdvanced
@@ -127,7 +127,7 @@ RegisterNetEvent('lockpicks:UseLockpick', function(isAdvanced)
 		end
 	end, 4, 14) -- NumberOfCircles, MS
 end)
-
+```
 
 Dependency 
 https://github.com/ofcshiro/FlagUpdateFix   [ For Gabz Maps Not props showing in Vault Fix ]
