@@ -109,12 +109,12 @@ RegisterNetEvent('lockpicks:UseLockpick', function(isAdvanced)
 	if not closestDoor.data or not next(closestDoor.data) or PlayerData.metadata['isdead'] or PlayerData.metadata['ishandcuffed'] or (not closestDoor.data.pickable and not closestDoor.data.lockpick) or not closestDoor.data.locked then return end
 	usingAdvanced = isAdvanced
 	TriggerEvent('qb-lockpick:client:openLockpick', lockpickFinish)
-end)```
+end)
 
 
               
  With these
-```lua
+
 RegisterNetEvent('lockpicks:UseLockpick', function(isAdvanced)
 	if not closestDoor.data or not next(closestDoor.data) or PlayerData.metadata['isdead'] or PlayerData.metadata['ishandcuffed'] or (not closestDoor.data.pickable and not closestDoor.data.lockpick) or not closestDoor.data.locked then return end
 	exports['ps-ui']:Circle(function(success)
@@ -130,4 +130,15 @@ end)
 ```
 
 Dependency 
+
+
 https://github.com/ofcshiro/FlagUpdateFix   [ For Gabz Maps Not props showing in Vault Fix ]
+
+https://github.com/buntyverma69/hacking   [ For Hacking Minigame ]
+
+
+**Credits:
+https://github.com/Project-Sloth/ps-ui
+https://github.com/qbcore-framework/qb-bankrobbery
+https://github.com/qbcore-framework/qb-doorlock
+https://github.com/ofcshiro/FlagUpdateFix 
