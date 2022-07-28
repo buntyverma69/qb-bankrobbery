@@ -127,3 +127,7 @@ RegisterNetEvent('lockpicks:UseLockpick', function(isAdvanced)
 		end
 	end, 4, 14) -- NumberOfCircles, MS
 end)
+
+
+Dependency 
+https://github.com/ofcshiro/FlagUpdateFix   [ For Gabz Maps Not props showing in Vault Fix ]
